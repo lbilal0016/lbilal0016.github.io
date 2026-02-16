@@ -1,8 +1,79 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Levent Bilal - Portfolio Page</title>
+        <link rel="stylesheet" href="./resources/css/style.css"> 
+    </head>
+    <body>
+        <!--    HEADER SECTION  -->
+        <header>
+            <div id="site-identity" class="site-identity">
+                <div id="identity-circle" class="circle identity-information"></div>
+                <h4 id="identity-name" class="title identity-information">Levent Bilal</h4>
+                <p id="identity-role" class="identity-information">Automotive Software Developer</p>
+            </div>
+            <nav>
+                <ul>
+                    <a id="nav-about" href="./resources/html/about.html"><li>About</li></a>
+                    <a id="nav-background" href="./resources/html/background.html"><li>Background</li></a>
+                    <a id="nav-career" href="./resources/html/career.html"><li>Career</li></a>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--    MAIN SECTION    -->
+        <main>
+            <!--    Profile picture and About me    -->
+            <section class="profile-section">
+                <figure class="profile-image">
+                    <img src="resources/images/ProfilePicture.png" alt="profile picture">
+                </figure>
+                <section class="brief-introduction">
+                    <h1>Levent Bilal</h1>
+                    <h3>About me</h3>
+                    <article>
+                        With nearly five years of experience developing safety-critical automotive software, 
+                        I am currently pursuing a career on web and desktop applications. Bringing an engineering mindset, together with reliability, structure, and problem-solving into modern, maintainable software solutions.
+                        This website is not developed by an AI; with all of its strengths and flaws, it was fully designed and developed by me. 
+                        Explore the sections below to learn more about my work and experience.
+                    </article>
+                </section>
+            </section>
 
-  <body>
-    <h1>LEVENT BILAL</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"/>
-  </body>
+            <!--    Links as clickable interactive circles  -->
+            <section class="nav-buttons">
+                <a class="button" id="about-button" href="./resources/html/about.html">About</a>
+                <a class="button" id="background-button" href="./resources/html/background.html">Background</a>
+                <a class="button" id="career-button" href="./resources/html/career.html">Career</a>
+            </section>
+        </main>
+
+        <!--    Next is footer section -->
+        <footer>
+            <div class="footer-item" id="footer-email">
+                <div class="footer-title">
+                    <img class="logo" alt="logo" src="./resources/images/logos/email-logo.png">
+                    <h5>E-Mail</h5>
+                </div>
+                <p><a href="mailto:leventbilal.16@gmail.com" target="_blank">leventbilal.16@gmail.com</a></p>
+            </div>
+            <div class="footer-item" id="footer-linkedin">
+                <div class="footer-title">
+                    <img class="logo" alt="logo" src="./resources/images/logos/linkedin-logo.png">
+                    <h5>LinkedIn</h5>
+                </div>
+                <p><a href="https://www.linkedin.com/in/levent-bilal-4b44a3162/" target="_blank">levent-bilal-4b44a3162</a></p>
+            </div>
+            <div class="footer-item" id="footer-linkedin">
+                <div class="footer-title">
+                    <img class="logo" alt="logo" src="./resources/images/logos/github-logo.png">
+                    <h5>GitHub</h5>
+                </div>
+                <p><a href="https://github.com/lbilal0016" target="_blank">https://github.com/lbilal0016</a></p>
+            </div>
+        </footer>
+
+        <script src="./resources/js/main.js"></script>
+    </body>
 </html>

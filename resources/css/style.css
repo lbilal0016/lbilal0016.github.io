@@ -1,0 +1,366 @@
+/*
+@import Fonts
+------  BEGIN   --------
+*/
+/*  Lato bold */
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*  EBGaramond regular    */
+@font-face{
+    font-family: 'EBGaramond';
+    src: url('../fonts/EB_Garamond/static/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  EBGaramond italic    */
+@font-face{
+    font-family: 'EBGaramond';
+    src: url('../fonts/EB_Garamond/static/EBGaramond-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Leckerli One';
+    src: url('../fonts/Leckerli_One/LeckerliOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*
+@import Fonts
+------  END   --------
+*/
+/*  body font-family throughout the page    */
+*{
+    font-family: 'EBGaramond', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+
+.site-identity{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.identity-information{
+    height: 100%;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+}
+
+#identity-circle{
+    height: 1rem;
+    width: 1rem;
+    border: #05668d;
+    color: #05668d;
+    background-color: #05668d;
+    margin: 1.25rem 0.8rem;
+    padding: 0;
+}
+
+#identity-name{
+}
+
+#identity-role{
+    padding-right: 0;
+}
+
+.circle{
+    border: 0.1rem solid;
+    border-radius: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 0 0.75rem;
+}
+
+#nav-background{
+    border-left: solid 0.01rem;
+    border-right: solid 0.01rem;
+}
+
+.background-sec #nav-about,
+.career-sec #nav-about{
+    border-left: solid 0.01rem;
+    border-right: solid 0.01rem;
+}
+
+.career-sec #nav-background{
+    border-left: none;
+    border-right: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;  /*  100% viewport height*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.profile-section{
+    display: flex;
+    margin: 10rem 15rem 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-image{
+    height: 25rem;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.profile-image img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brief-introduction{
+    padding-left: 0;
+    padding-top: 7%;
+}
+
+.brief-introduction article{
+    font-size: 1.15rem;
+}
+
+/*  CSS Rules of profile section for laptop screens */
+@media all and (max-width: 17in){
+    .profile-section{
+        display: flex;
+        margin: 5rem 10rem 0;
+    }
+
+    .profile-image{
+        height: 20rem;
+        width: 20rem;
+        flex-shrink: 0;
+    }
+
+    .profile-image img{
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }    
+
+    .brief-introduction{
+        padding-top: 5%;
+        padding-left: 2%;
+    }
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50%;
+    margin-right: 20%;
+    margin-top: -5%;
+}
+
+.nav-buttons .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0;
+    border-radius: 100%;
+}
+
+#about-button{
+    border: solid 0.01rem #028090;
+    background-color: #028090; 
+    color: #f4f3ee;
+}
+
+#background-button{
+    border: solid 0.01rem #00a896;
+    background-color: #00a896; 
+    color: #f4f3ee;
+}
+
+#career-button{
+    border: solid 0.01rem #02c39a;
+    background-color: #02c39a; 
+    color: #f4f3ee; 
+}
+
+/*  CSS Rules of interactive circle section for laptop screens */
+@media all and (max-width: 17in){
+    .nav-buttons{
+        margin-top: 0;
+    }
+
+    .nav-buttons .button{
+    height: 6rem;
+    width: 6rem;
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    border-top: solid 0.01rem #a8dadc;
+    margin-top: 10%;
+}
+
+.footer-item{
+    height: 5rem;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.footer-title .logo{
+    margin-right: 5%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.footer-item p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/*  ABOUT PAGE  */
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+main.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section h1{
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-section h1{
+    display: flex;
+    justify-content: center;
+}
+
+.about-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.15rem;
+}
+
+footer.about{
+    margin-top: 0%;
+    flex-grow: 0%;
+}
+
+/*  BACKGROUND PAGE */
+main.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.background-sub, .career-entry{
+    border: solid #a8dadc 0.01rem;
+    padding: 2%;
+    box-shadow: 0.3rem 0.15rem 0.15rem #028090;
+}
+
+.background-sub{
+    width: 35%;
+}
+
+.background-sub i{
+    font-family: 'EBGaramond', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.background-sub h3{
+    display: flex;
+    justify-content: center;
+}
+
+.master{
+    margin-left: 5%;
+}
+
+footer.background{
+    margin-top: 0;
+}
+
+/*  CAREER PAGE */
+main.career{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.career-entry{
+    width: 65%;
+    margin-bottom: 3%;
+}
+
+.career-title-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.career-entry a{
+    color: #028090;
+}
